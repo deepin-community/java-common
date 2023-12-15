@@ -1,14 +1,33 @@
-java-common (0.72.1-1+deepin) UNRELEASED; urgency=medium
+java-common (0.74+deepin1) unstable; urgency=medium
 
-  * update
+  * Add loong64 support
 
- -- Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>  Thu, 28 Jul 2022 15:31:42 +0800
+ -- Han Gao <gaohan@iscas.ac.cn>  Tue, 28 Mar 2023 01:11:38 +0800
 
-java-common (0.72.1-1+deepin) unstable; urgency=medium
+java-common (0.74) unstable; urgency=medium
 
-  * Add sunway support.
+  * Team upload.
+  * Use OpenJDK 17 on powerpc (Closes: #1028484)
+  * Standards-Version updated to 4.6.2
 
- -- Miao Changwei <miaochangwei@uniontech.com>  Fri, 29 Apr 2022 19:35:05 +0800
+ -- Emmanuel Bourg <ebourg@apache.org>  Wed, 11 Jan 2023 23:12:21 +0100
+
+java-common (0.73) unstable; urgency=medium
+
+  * Team upload.
+  * Use OpenJDK 17 on alpha, amd64, arm64, armel, armhf, i386, ia64, m68k,
+    mipsel, mips64el, ppc64, ppc64el, riscv64, s390x, sh4, sparc64 and x32.
+  * The java-runtime & java-runtime-headless virtual packages are now versioned
+  * Fixed the return code of update-java-alternatives --list and --set
+    (Closes: #929105, #1017922)
+  * Dropped unsupported architectures: hppa, kfreebsd-amd64, kfreebsd-i386,
+    hurd-i386, powerpcspe, s390 and sparc
+  * New macro java_unsupported_architectures listing architectures without Java
+  * Keep the default values for the LTS versions since Java 8 only (8, 11, 17)
+  * Standards-Version updated to 4.6.1
+  * Switch to debhelper level 13
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Mon, 31 Oct 2022 19:07:53 +0100
 
 java-common (0.72) unstable; urgency=medium
 
