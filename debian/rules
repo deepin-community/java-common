@@ -7,8 +7,8 @@ release = $(shell dpkg-parsechangelog | grep -E ^Version: | sed "s/Version: 0.//
 
 dversion	= 2:1.$(java_default_version)-$(release)
 
-jre_provides	= java-runtime, java2-runtime, $(shell seq --format java%.f-runtime --separator ', ' 5 $(java_default_version))
-jhl_provides	= java-runtime-headless, java2-runtime-headless, $(shell seq --format java%.f-runtime-headless --separator ', ' 5 $(java_default_version))
+jre_provides	= java-runtime (= $(java_default_version)), java2-runtime, $(shell seq --format java%.f-runtime --separator ', ' 5 $(java_default_version))
+jhl_provides	= java-runtime-headless (= $(java_default_version)), java2-runtime-headless, $(shell seq --format java%.f-runtime-headless --separator ', ' 5 $(java_default_version))
 jdk_provides	= java-sdk, java2-sdk, $(shell seq --format java%.f-sdk --separator ', ' 5 $(java_default_version))
 jdkhl_provides	= java-sdk-headless, java2-sdk-headless, $(shell seq --format java%.f-sdk-headless --separator ', ' 5 $(java_default_version))
 

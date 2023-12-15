@@ -153,3 +153,5 @@ if [ "$action" != list ] && [ "$(id -u)" -ne 0 ]; then
 fi
 
 do_$action
+
+exit 0
