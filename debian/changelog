@@ -1,8 +1,18 @@
-java-common (0.74+deepin1) unstable; urgency=medium
+java-common (0.75) unstable; urgency=medium
 
-  * Add loong64 support
+  * Team upload.
 
- -- Han Gao <gaohan@iscas.ac.cn>  Tue, 28 Mar 2023 01:11:38 +0800
+  [ tony mancill ]
+  * Correct update-java-alternatives return code (Closes: #1017922)
+  * No longer call do_auto during do_set (Closes: #829008)
+  * Freshen years in debian/copyright
+
+  [ Emmanuel Bourg ]
+  * Added loong64 to the list of Java 17 architectures (Closes: #1051305)
+  * New macro java_compat_level giving the minimum source/target
+    compatibility level supported by the default JDK
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Thu, 05 Oct 2023 00:56:32 +0200
 
 java-common (0.74) unstable; urgency=medium
 

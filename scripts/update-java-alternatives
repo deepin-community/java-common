@@ -101,7 +101,7 @@ fi
 
 vecho()
 {
-    [ -z "$verbose" ]  || echo >&2 "$@"
+    [ -z "$verbose" ] || echo >&2 "$@"
 }
 
 jinfo_files=
@@ -124,14 +124,12 @@ do_list()
 	alias=${alias#.}
 	prio=$(awk -F= '/priority=/ {print $2}' $i)
 	printf "%-30s %-10s %s\n" $alias "$prio " $top/$alias
-	[ -n "$verbose" ] && egrep "$which" $i
+	[ -n "$verbose" ] && egrep "$which" $i || true
     done
 }
 
 do_set()
 {
-    do_auto
-
     awk "/$which/ {print}" $jinfo | sort -u \
 	| \
     while read type name location; do

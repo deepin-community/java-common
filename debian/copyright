@@ -8,11 +8,12 @@ Copyright: 2000, Stephane Bortzmeyer <bortzmeyer@debian.org>
            2003, Stefan Gybas <sgybas@debian.org>
            2005, Arnaud Vandyck <avdyk@debian.org>
            2006-2008, Michael Koch <konqueror@gmx.de>
-           2006-2016, Matthias Klose <doko@debian.org>
+           2006-2023, Matthias Klose <doko@debian.org>
            2009, Torsten Werner <twerner@debian.org>
            2010, Niels Thykier <niels@thykier.net>
            2011-2013, Sylvestre Ledru <sylvestre@debian.org>
-           2014-2017, Emmanuel Bourg <ebourg@apache.org>
+           2014-2023, Emmanuel Bourg <ebourg@apache.org>
+           2013-2023, tony mancill <tmancill@debian.org>
 License: GPL-2+
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
